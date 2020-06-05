@@ -1,0 +1,33 @@
+#
+# Shelly 2.5
+#
+
+# Since :
+# DOCS  : https://shelly-api-docs.shelly.cloud/#shelly2-5-mqtt
+# Sample: shellies/shellyswitch25-<deviceid>/...
+
+# relay mode
+topic write shellies/+/input/0
+topic write shellies/+/input/1
+topic write shellies/+/temperature
+topic write shellies/+/overtemperature
+topic write shellies/+/longpush/0
+topic write shellies/+/longpush/1
+topic write shellies/+/input_event/0
+topic write shellies/+/input_event/1
+topic write shellies/+/relay/0
+topic write shellies/+/relay/1
+topic read  shellies/+/relay/0/command
+topic read  shellies/+/relay/1/command
+topic write shellies/+/relay/0/energy
+topic write shellies/+/relay/1/energy
+topic write shellies/+/relay/0/power
+topic write shellies/+/relay/1/power
+
+# roller mode
+topic write shellies/+/roller/0
+topic read  shellies/+/roller/0/command
+topic write shellies/+/roller/0/power
+topic write shellies/+/roller/0/energy
+topic write shellies/+/roller/0/pos
+topic read  shellies/+/roller/0/command/pos
