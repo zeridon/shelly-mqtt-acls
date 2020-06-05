@@ -1,4 +1,9 @@
+#
 # Shelly4Pro
+#
+
+# Since :
+# DOCS  : https://shelly-api-docs.shelly.cloud/#shelly4pro-mqtt
 # shellies/shelly4pro-<deviceid>/...
 topic write shellies/+/input/0
 topic write shellies/+/input/1
