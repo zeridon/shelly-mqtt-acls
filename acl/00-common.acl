@@ -1,0 +1,28 @@
+#
+# Common ACL for all Shelly devices
+#
+
+# Since : v1.4.3
+# DOCS  : Device announces itself
+# Sample: shellies/announce
+topic write shellies/announce
+
+# Since : v1.6.0
+# DOCS  : Device announces itself
+# Sample: shellies/<shellymodel>-<deviceid>/announce
+topic write shellies/+/announce
+
+# Since : v1.6.0
+# DOCS  : Device reports availability with payload true
+#       : Last Will and Testament is the same topic with payload false
+# Sample: shellies/<shellymodel>-<deviceid>/online
+topic write shellies/+/online
+
+# Since : ???
+# Since : 1.6.0
+# DOCS  : Publishing payloads trigger operations on or from device
+#       :  * online - device announces itself on announce topics
+#       :  * update - device reports state
+#       :  * update_fw - start firmware update
+topic read shellies/command
+topic read shellies/+/command
