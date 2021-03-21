@@ -17,6 +17,7 @@ topic write shellies/%c/relay/0/energy
 topic write shellies/%c/temperature
 topic write shellies/%c/temperature_f
 topic write shellies/%c/temperature_status
+topic write shellies/%c/overtemperature
 
 #For add-ons with DS1820 sensors:
 topic write shellies/%c/ext_temperature/0
