@@ -10,13 +10,13 @@ topic write shellies/announce
 # Since : v1.6.0
 # DOCS  : Device announces itself
 # Sample: shellies/<shellymodel>-<deviceid>/announce
-topic write shellies/+/announce
+topic write shellies/%c/announce
 
 # Since : v1.6.0
 # DOCS  : Device reports availability with payload true
 #       : Last Will and Testament is the same topic with payload false
 # Sample: shellies/<shellymodel>-<deviceid>/online
-topic write shellies/+/online
+topic write shellies/%c/online
 
 # Since : ???
 # Since : 1.6.0
@@ -25,4 +25,4 @@ topic write shellies/+/online
 #       :  * update - device reports state
 #       :  * update_fw - start firmware update
 topic read shellies/command
-topic read shellies/+/command
+topic read shellies/%c/command
