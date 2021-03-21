@@ -1,0 +1,25 @@
+#
+# Shelly Dimmer 1/2
+#
+
+# Since :
+# DOCS  : https://shelly-api-docs.shelly.cloud/#shelly-dimmer-1-2-mqtt
+# Sample: shellies/<model>-<deviceid>/...
+topic read shellies/%c/light/0/command
+topic read shellies/%c/light/0/set
+topic write shellies/%c/input/0
+topic write shellies/%c/input/1
+topic write shellies/%c/input_event/0
+topic write shellies/%c/input_event/1
+topic write shellies/%c/longpush/0
+topic write shellies/%c/longpush/1
+topic write shellies/%c/temperature
+topic write shellies/%c/temperature_f
+topic write shellies/%c/overtemperature
+topic write shellies/%c/overload
+topic write shellies/%c/loaderror
+topic write shellies/%c/light/0
+topic write shellies/%c/light/0/power
+topic write shellies/%c/light/0/overpower_value
+topic write shellies/%c/light/0/energy
+topic write shellies/%c/light/0/status
