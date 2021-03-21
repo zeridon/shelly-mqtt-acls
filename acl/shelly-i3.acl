@@ -1,0 +1,14 @@
+#
+# Shelly i3
+#
+
+# Since :
+# DOCS  : ttps://shelly-api-docs.shelly.cloud/#shelly-i3-mqtt
+# Sample: shellies/shellyix3-<deviceid>/...
+topic write shellies/%c/input/0
+topic write shellies/%c/input/1
+topic write shellies/%c/input/2
+topic write shellies/%c/input_event/0
+topic write shellies/%c/input_event/1
+topic write shellies/%c/input_event/2
+topic write shellies/%c/temperature_status
