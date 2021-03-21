@@ -1,0 +1,7 @@
+#
+# User settup for shellies acl
+#
+
+# User name
+# DOCS: username that the devices will use when connecting to the broker
+user shellies
