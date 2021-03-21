@@ -1,0 +1,13 @@
+#
+# Shelly Vintage
+#
+
+# Since :
+# DOCS  : https://shelly-api-docs.shelly.cloud/#shelly-vintage-mqtt
+# Sample: shellies/<model>-<deviceid>/...
+topic read shellies/%c/light/0/command
+topic write shellies/%c/light/0
+topic write shellies/%c/light/0/status
+topic write shellies/%c/light/0/power
+topic write shellies/%c/light/0/energy
+topic read shellies/%c/light/0/set
