@@ -1,0 +1,38 @@
+#
+# Shelly EM
+#
+
+# Since :
+# DOCS  : https://shelly-api-docs.shelly.cloud/#shelly-em-mqtt
+# Sample: shellies/<model>-<deviceid>/...
+topic read  shellies/%c/emeter/0/command
+topic read  shellies/%c/emeter/1/command
+topic read  shellies/%c/emeter/2/command
+topic read  shellies/%c/relay/0/command
+topic write shellies/%c/emeter/0
+topic write shellies/%c/emeter/0/current
+topic write shellies/%c/emeter/0/energy
+topic write shellies/%c/emeter/0/pf
+topic write shellies/%c/emeter/0/power
+topic write shellies/%c/emeter/0/returned_energy
+topic write shellies/%c/emeter/0/total
+topic write shellies/%c/emeter/0/total_returned
+topic write shellies/%c/emeter/0/voltage
+topic write shellies/%c/emeter/1
+topic write shellies/%c/emeter/1/current
+topic write shellies/%c/emeter/1/energy
+topic write shellies/%c/emeter/1/pf
+topic write shellies/%c/emeter/1/power
+topic write shellies/%c/emeter/1/returned_energy
+topic write shellies/%c/emeter/1/total
+topic write shellies/%c/emeter/1/total_returned
+topic write shellies/%c/emeter/1/voltage
+topic write shellies/%c/emeter/2
+topic write shellies/%c/emeter/2/current
+topic write shellies/%c/emeter/2/energy
+topic write shellies/%c/emeter/2/pf
+topic write shellies/%c/emeter/2/power
+topic write shellies/%c/emeter/2/returned_energy
+topic write shellies/%c/emeter/2/total
+topic write shellies/%c/emeter/2/total_returned
+topic write shellies/%c/emeter/2/voltage
