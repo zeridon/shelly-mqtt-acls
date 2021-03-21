@@ -5,15 +5,15 @@
 # Since :
 # DOCS  : https://shelly-api-docs.shelly.cloud/#shelly-uni-mqtt
 # Sample: shellies/shellyswitch-<deviceid>/...
-topic write shellies/%c/input/0
-topic write shellies/%c/input/1
-topic write shellies/%c/longpush/0
-topic write shellies/%c/longpush/1
-topic write shellies/%c/input_event/0
-topic write shellies/%c/input_event/1
-topic write shellies/%c/relay/0
-topic write shellies/%c/relay/1
-topic write shellies/%c/adc/0
-topic write shellies/%c/adc/1
 topic read  shellies/%c/relay/0/command
 topic read  shellies/%c/relay/1/command
+topic write shellies/%c/adc/0
+topic write shellies/%c/adc/1
+topic write shellies/%c/input/0
+topic write shellies/%c/input/1
+topic write shellies/%c/input_event/0
+topic write shellies/%c/input_event/1
+topic write shellies/%c/longpush/0
+topic write shellies/%c/longpush/1
+topic write shellies/%c/relay/0
+topic write shellies/%c/relay/1

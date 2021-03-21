@@ -5,15 +5,14 @@
 # Since :
 # DOCS  : https://shelly-api-docs.shelly.cloud/#shelly-gas-mqtt
 # Sample: shellies/<model>-<deviceid>/...
-topic write shellies/%c/sensor/temperature
+topic read  shellies/%c/sensor/mute
+topic read  shellies/%c/sensor/start_self_test
+topic read  shellies/%c/sensor/unmute
+topic read  shellies/%c/valve/0/command
 topic write shellies/%c/sensor/battery
+topic write shellies/%c/sensor/concentration
 topic write shellies/%c/sensor/gas
 topic write shellies/%c/sensor/operation
 topic write shellies/%c/sensor/self_test
-topic write shellies/%c/sensor/concentration
+topic write shellies/%c/sensor/temperature
 topic write shellies/%c/valve/0/state
-topic read shellies/%c/sensor/start_self_test
-topic read shellies/%c/sensor/mute
-topic read shellies/%c/sensor/unmute
-topic read shellies/%c/valve/0/command
-

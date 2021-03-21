@@ -6,7 +6,7 @@
 # DOCS  : https://shelly-api-docs.shelly.cloud/#shelly-bulb-mqtt
 # Sample: shellies/<model>-<deviceid>/...
 # ON/OFF mode
-topic read shellies/%c/color/0/command
+topic read  shellies/%c/color/0/command
 topic write shellies/%c/color/0
 topic write shellies/%c/color/0/status
 

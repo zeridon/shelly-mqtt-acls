@@ -5,9 +5,9 @@
 # Since :
 # DOCS  : https://shelly-api-docs.shelly.cloud/#shelly-sense-mqtt
 # Sample: shellies/<model>-<deviceid>/...
-topic write shellies/%c/sensor/motion
+topic write shellies/%c/sensor/battery
 topic write shellies/%c/sensor/charger
-topic write shellies/%c/sensor/temperature
 topic write shellies/%c/sensor/humidity
 topic write shellies/%c/sensor/lux
-topic write shellies/%c/sensor/battery
+topic write shellies/%c/sensor/motion
+topic write shellies/%c/sensor/temperature

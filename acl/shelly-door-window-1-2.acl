@@ -5,9 +5,9 @@
 # Since :
 # DOCS  : https://shelly-api-docs.shelly.cloud/#shelly-smoke-mqtt
 # Sample: shellies/<model>-<deviceid>/...
-topic write shellies/%c/sensor/temperature
 topic write shellies/%c/sensor/battery
+topic write shellies/%c/sensor/lux
 topic write shellies/%c/sensor/state
+topic write shellies/%c/sensor/temperature
 topic write shellies/%c/sensor/tilt
 topic write shellies/%c/sensor/vibration
-topic write shellies/%c/sensor/lux
