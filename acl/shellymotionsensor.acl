@@ -1,0 +1,8 @@
+#
+# Shelly Motion
+#
+
+# Since :
+# DOCS  : https://shelly-api-docs.shelly.cloud/#shelly-motion-mqtt
+# Sample: shellies/shellymotionsensor-<deviceid>/status
+topic write shellies/%c/status
