@@ -1,0 +1,35 @@
+#
+# Shelly RGBW2 Color/White
+#
+
+# Since :
+# DOCS  : https://shelly-api-docs.shelly.cloud/#shelly-rgbw2-color-mqtt
+# DOCS  : https://shelly-api-docs.shelly.cloud/#shelly-rgbw2-white-mqtt
+# Sample: shellies/<model>-<deviceid>/...
+# color mode
+topic read shellies/%c/color/0/command
+topic read shellies/%c/color/0/set
+topic write shellies/%c/color/0
+topic write shellies/%c/color/0/status
+topic write shellies/%c/input/0
+topic write shellies/%c/input_event/0
+topic write shellies/%c/longpush/0
+
+# white mode
+topic read shellies/%c/white/0/command
+topic read shellies/%c/white/0/set
+topic write shellies/%c/white/0
+topic write shellies/%c/white/0/status
+topic read shellies/%c/white/1/command
+topic read shellies/%c/white/1/set
+topic write shellies/%c/white/1
+topic write shellies/%c/white/1/status
+topic read shellies/%c/white/2/command
+topic read shellies/%c/white/2/set
+topic write shellies/%c/white/2
+topic write shellies/%c/white/2/status
+topic read shellies/%c/white/3/command
+topic read shellies/%c/white/3/set
+topic write shellies/%c/white/3
+topic write shellies/%c/white/3/status
+
