@@ -5,31 +5,31 @@
 # Since :
 # DOCS  : https://shelly-api-docs.shelly.cloud/#shelly1-1pm-mqtt
 # Sample: shellies/shelly1-<deviceid>/...
-topic write shellies/+/relay/0
-topic read  shellies/+/relay/0/command
-topic write shellies/+/input/0
-topic write shellies/+/longpush/0
-topic write shellies/+/input_event/0
+topic write shellies/%c/relay/0
+topic read  shellies/%c/relay/0/command
+topic write shellies/%c/input/0
+topic write shellies/%c/longpush/0
+topic write shellies/%c/input_event/0
 
 # 1PM adds
-topic write shellies/+/relay/0/power
-topic write shellies/+/relay/0/energy
-topic write shellies/+/temperature
-topic write shellies/+/temperature_f
-topic write shellies/+/overtemperature
+topic write shellies/%c/relay/0/power
+topic write shellies/%c/relay/0/energy
+topic write shellies/%c/temperature
+topic write shellies/%c/temperature_f
+topic write shellies/%c/temperature_status
 
 #For add-ons with DS1820 sensors:
-topic write shellies/+/ext_temperature/0
-topic write shellies/+/ext_temperature/1
-topic write shellies/+/ext_temperature/2
-topic write shellies/+/ext_temperature_f/0
-topic write shellies/+/ext_temperature_f/1
-topic write shellies/+/ext_temperature_f/2
+topic write shellies/%c/ext_temperature/0
+topic write shellies/%c/ext_temperature/1
+topic write shellies/%c/ext_temperature/2
+topic write shellies/%c/ext_temperature_f/0
+topic write shellies/%c/ext_temperature_f/1
+topic write shellies/%c/ext_temperature_f/2
 
 # For add-ons with a DHT22 sensor, in addition to the temperature topic above, a humidity topic is published too:
-topic write shellies/+/ext_humidity/0
+topic write shellies/%c/ext_humidity/0
 
 # Shelly1/1PM also provide aggregated topics which contain data from all sensors along with their hardware IDs.
-topic write shellies/+/ext_temperatures
-topic write shellies/+/ext_temperatures_f
-topic write shellies/+/ext_humidities
+topic write shellies/%c/ext_temperatures
+topic write shellies/%c/ext_temperatures_f
+topic write shellies/%c/ext_humidities
