@@ -1,0 +1,10 @@
+#
+# Shelly Flood
+#
+
+# Since :
+# DOCS  : https://shelly-api-docs.shelly.cloud/#shelly-flood-mqtt
+# Sample: shellies/<model>-<deviceid>/...
+topic write shellies/%c/sensor/temperature
+topic write shellies/%c/sensor/flood
+topic write shellies/%c/sensor/battery
