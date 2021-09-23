@@ -1,0 +1,21 @@
+#
+# Common ACL for all Shelly GEN2 devices
+#
+
+# Since : 0.7.0 - 2021-09-01
+# DOCS  : Shelly GEN 2 now uses different topic patterns
+#       : https://shelly-api-docs.shelly.cloud/gen2/Overview/RPCChannels/#mqtt
+
+# Listen for commands
+topic read %c/rpc
+
+# Write responses
+# this seems like an extremely bad idea
+topic write +/rpc
+
+# Write events
+topic write %c/events/rpc
+
+# Since  : 0.8.0 - 2021-09-13
+# DOCS   : Stream debug logs over MQTT
+topic write %c/debug/log
